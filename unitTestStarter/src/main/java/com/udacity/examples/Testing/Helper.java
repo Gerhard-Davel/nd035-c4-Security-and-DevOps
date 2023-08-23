@@ -12,12 +12,12 @@ public class Helper {
 	    * @return
 	    */
 		public static long getCount(List<String> strings){
-			return strings.stream().filter(string->string.isEmpty()).count();
+			return strings.stream().filter(s -> !s.isEmpty()).count();
 		}
 		
 		/**
 		 * Method to get the stats of a list of numbers 
-		 * @param numbers
+		 * @param
 		 * @return
 		 */
 		public static IntSummaryStatistics getStats(List<Integer> expYears) {
